@@ -1,9 +1,4 @@
-<?php
 
-$first_name = "John";
-
-    echo "Hello " . $first_name;
-?>
 
 <!DOCTYPE html >
 <html lang="en">
@@ -70,9 +65,65 @@ foreach ($fruits as $fruit) {
     echo $fruit." ";
 }
 
+echo "<br>";
 
 
+$person = array(
+    "name" => "Rica",
+    "age" => 25,
+    "city" => "Quezon City"
+);
+
+echo "Person Information:\n";
+echo "Name: ".$person["name"]. "\n";
+echo "Age: ".$person["age"]. "\n";
+echo "City: ".$person["city"]. "\n";
+
+echo "<br>";
+
+// Task 6: Functions
+function addNumbers($num1, $num2) {
+    $sum= $num1+$num2;
+    return $sum;
+}
+
+
+$number1 = 2;
+$number2 = 9;
+
+$result = addNumbers($number1, $number2);
+
+echo "The sum of $number1 and $number2 is: $result\n";
+
+echo "<br>";
+
+
+
+$result1 = addNumbers($number1, $number2);
+echo "The sum of $number1 and $number2 is: $result1\n";
+
+$number3 = 6;
+$number4 = 8;
+
+$result2 = addNumbers($number3, $number4);
+echo "The sum of $number3 and $number4 is: $result2\n";
+
+$number5 = 4;
+$number6 = 7;
+
+$result3 = addNumbers($number5, $number6);
+echo "The sum of $number5 and $number6 is: $result3\n";
 ?>
+<hr>
+
+<!--Task 7: Form Handling-->
+
+<form action="nameform.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
 </div>
 
 </body>
